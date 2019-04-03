@@ -27,6 +27,9 @@ button, strong {
     text-transform: uppercase;
 }
 
+  /*icons 24px*/
+
+
 /* LAYOUT #5 #split */
 
 #channels {
@@ -91,10 +94,13 @@ h1 a {
     color: white;
 }
 
-h1 #channel-star {
+h1 i {
     /* #6 #liking #filled  */
     position:absolute;
     right: 16px;
+    font-size: 24px;
+    top: 16px;
+
 }
 
 /* CHANNELS LIST */
@@ -129,9 +135,11 @@ li .channel-meta {
     top: 12px;
 }
 
-li img {
-    vertical-align: middle;
+li i.fas, li i.far {
+    font-size: 24px;
+    padding-left: 4px;
 }
+
 
 li.selected {
     color: #3F51B5;
@@ -178,12 +186,18 @@ li.selected {
 }
 
 /* #5 CHAT BAR */
+#chat-bar {
+    /* #9 #flex the #chat-bar */
+    justify-content:space-between;
+    align-items:center;}
 
 #chat-bar button {
     /* #5 #smileys #override button styles. We set the chat bar to appear like a tab-bar above. This overrides the tab bar's button scaling */
     width: auto;
     flex-grow: 0;
+    font-size: 24px;
 }
+
 
 #emojis {
     /* #5 #smileys #emojis menu */
@@ -209,6 +223,16 @@ li.selected {
 
     /* #6 #hide the #smile menu */
     display: none;
+}
+
+#chat-bar input {
+    font-size: 16px;
+    border:none;
+    flex-grow: 1;
+}
+
+#chat-bar #button-send {
+    text-align: right;
 }
 
 /* MESSAGES */
